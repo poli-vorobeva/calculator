@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="391d15f7-923e-4066-b451-f2b5a7180649" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Actions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/DataString.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Equal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Numbers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducer/viewActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducer/viewReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2MeFIGVUtWkauHNjqEwmIbZA54e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\poli8\Desktop\calculator\node_modules\typescript\lib" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="391d15f7-923e-4066-b451-f2b5a7180649" name="Default Changelist" comment="" />
+      <created>1678120060318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678120060318</updated>
+      <workItem from="1678120066838" duration="29000" />
+      <workItem from="1678120097731" duration="1029000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="495" y="103" key="FileChooserDialogImpl" timestamp="1678120093197">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="495" y="103" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1678120093197" />
+  </component>
+</project>
