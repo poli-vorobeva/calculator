@@ -23,9 +23,12 @@ export const RightSection = () => {
 				 onDrop={(e) => dropHandler(e)}
 		>
 			{
+				!!sectionsData.length
+					?
 				sectionsData.map((sec: string) => <DragWrapper screen={'view'} value={sec}>
 					<div>{sec}</div>
 				</DragWrapper>)
+					:<div>Empty</div>
 			}
 		</div>
 	)
