@@ -12,6 +12,6 @@
     "moduleResolution": "node"
   },
   "files": [
-    "src/index.tsx"
+    "src/index.tsx","module.d.ts"
   ]
 }
