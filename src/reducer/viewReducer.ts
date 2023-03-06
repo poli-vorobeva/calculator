@@ -6,7 +6,7 @@ const initialState:IViewInitialState = {
 }
 export interface IViewInitialState {
 	mode: 'constructor' | 'runtime',
-	constructorData:string[]
+	constructorData:string[],
 }
 export const viewReducer = createSlice({
 	name: 'viewData',

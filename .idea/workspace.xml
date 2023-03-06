@@ -12,7 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="391d15f7-923e-4066-b451-f2b5a7180649" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducer/viewReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/viewReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678120060318</updated>
       <workItem from="1678120066838" duration="29000" />
-      <workItem from="1678120097731" duration="5736000" />
+      <workItem from="1678120097731" duration="8245000" />
     </task>
     <servers />
   </component>

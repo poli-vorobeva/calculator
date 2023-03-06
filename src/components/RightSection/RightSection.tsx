@@ -1,15 +1,10 @@
 import * as React from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {IViewInitialState} from '../../reducer/viewReducer'
-import {AppDispatch} from "../../dto";
+import {AppDispatch, IViewStore} from "../../dto";
 import {addSection,deleteSection} from '../../reducer/actions'
 import {DragWrapper} from "../UI/DragWrapper";
-interface IViewStore {
-	viewData: IViewInitialState
-}
 
 export const RightSection = () => {
-
 	const sectionsData = useSelector((state: IViewStore) => state.viewData.constructorData)
 	const dispatch = useDispatch<AppDispatch>()
 	const dropHandler = (e: React.DragEvent<HTMLDivElement>) => {
@@ -25,7 +20,7 @@ export const RightSection = () => {
 			{
 				!!sectionsData.length
 					?
-				sectionsData.map((sec: string) => <DragWrapper screen={'view'} value={sec}>
+				sectionsData.map((sec: string) => <DragWrapper blocked={false} key={sec+'^^'} screen={'view'} value={sec}>
 					<div>{sec}</div>
 				</DragWrapper>)
 					:<div>Empty</div>
