@@ -11,17 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="391d15f7-923e-4066-b451-f2b5a7180649" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Actions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/DataString.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Equal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Numbers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducer/viewActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducer/viewReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducer/dragReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/viewActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/viewReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/viewReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678120060318</updated>
       <workItem from="1678120066838" duration="29000" />
-      <workItem from="1678120097731" duration="1029000" />
+      <workItem from="1678120097731" duration="5400000" />
     </task>
     <servers />
   </component>
@@ -97,5 +93,21 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="495" y="103" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1678120093197" />
+    <state width="1507" height="11" key="GridCell.Tab.0.bottom" timestamp="1678121419275">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1507" height="11" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1678121419275" />
+    <state width="1507" height="11" key="GridCell.Tab.0.center" timestamp="1678121419275">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1507" height="11" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1678121419275" />
+    <state width="1507" height="11" key="GridCell.Tab.0.left" timestamp="1678121419275">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1507" height="11" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1678121419275" />
+    <state width="1507" height="11" key="GridCell.Tab.0.right" timestamp="1678121419275">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1507" height="11" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1678121419275" />
   </component>
 </project>

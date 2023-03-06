@@ -13,11 +13,15 @@ export const viewReducer = createSlice({
 	initialState,
 	reducers: {
 		addSection:(state:IViewInitialState,action:PayloadAction<string>)=>{
-			state.constructorData.push(action.payload)
-			console.log(state.constructorData)
+			!state.constructorData.includes(action.payload) && state.constructorData.push(action.payload)
 		},
 		deleteSection:(state:IViewInitialState,action:PayloadAction<string>)=>{
 			state.constructorData=state.constructorData.filter(el=>el!==action.payload)
+		},
+		reorderItems:(state:IViewInitialState,action:PayloadAction<{ drag: string, over: string }>)=>{
+			const dragIndex = state.constructorData.indexOf(action.payload.drag)
+			const overIndex = state.constructorData.indexOf(action.payload.over);
+			[state.constructorData[dragIndex],state.constructorData[overIndex]]=[state.constructorData[overIndex],state.constructorData[dragIndex]]
 		}
 	}
 })

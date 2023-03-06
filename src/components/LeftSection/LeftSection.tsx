@@ -17,7 +17,7 @@ export const LeftSection = () => {
 		<div className="section">
 			LEFt
 			{Object.entries(content).map(el=>{
-				return <DragWrapper value={el[0]}>{el[1]}</DragWrapper>
+				return <DragWrapper screen={'constructor'} value={el[0]}>{el[1]}</DragWrapper>
 			})}
 		</div>
 	)

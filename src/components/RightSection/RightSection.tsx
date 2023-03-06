@@ -2,7 +2,8 @@ import * as React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {IViewInitialState} from '../../reducer/viewReducer'
 import {AppDispatch} from "../../dto";
-import {addSection,deleteSection} from '../../reducer/viewActions'
+import {addSection,deleteSection} from '../../reducer/actions'
+import {DragWrapper} from "../UI/DragWrapper";
 interface IViewStore {
 	viewData: IViewInitialState
 }
@@ -22,7 +23,9 @@ export const RightSection = () => {
 				 onDrop={(e) => dropHandler(e)}
 		>
 			{
-				sectionsData.map((sec: string) => <div onDoubleClick={()=>dispatch(deleteSection(sec))}>{sec}</div>)
+				sectionsData.map((sec: string) => <DragWrapper screen={'view'} value={sec}>
+					<div>{sec}</div>
+				</DragWrapper>)
 			}
 		</div>
 	)
