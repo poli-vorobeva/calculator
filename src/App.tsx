@@ -9,19 +9,20 @@ import {IViewStore} from "./dto";
 
 export const App = () => {
 	const modeData: Array<'constructor' | 'runtime'> = ['constructor', 'runtime']
-	const mode = useSelector((state:IViewStore) => state.viewData.mode)
+	const mode = useSelector((state: IViewStore) => state.viewData.mode)
 
-	console.log("MODE",mode)
+	console.log("MODE", mode)
 	return (
-
-			<div className="wrapper">
+		<div className={'app'}>
+			<div className={'mode'}>
 				{
 					modeData.map((m, i) => <ModeRadio mode={m}/>)
 				}
-				{mode!=='runtime' && <LeftSection/>}
+			</div>
+			<div className="wrapper">
+				{mode !== 'runtime' && <LeftSection/>}
 				<RightSection/>
 			</div>
-
-
+		</div>
 	)
 }

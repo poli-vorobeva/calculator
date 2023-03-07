@@ -21,7 +21,7 @@ export const LeftSection = () => {
 	}
 
 	return (
-		<div className="section">
+		<div className="section left">
 			{Object.entries(content).map(el=>{
 				return <DragWrapper key={el[0]} blocked={addedData.includes(el[0])} screen={'constructor'} value={el[0]}>{el[1]}</DragWrapper>
 			})}

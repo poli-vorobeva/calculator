@@ -2,6 +2,6 @@ import * as React from "react";
 
 export const Equal=()=>{
 	return (
-		<div>=</div>
+		<div className={'itemWrapper singleString equal'}>=</div>
 	)
 }

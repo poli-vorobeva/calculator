@@ -24,7 +24,7 @@ export const RightSection = () => {
 		dispatch(addSection(t))
 	}
 	return (
-		<div className="section"
+		<div className="section right"
 				 onDragOver={(e) => e.preventDefault()}
 				 onDrop={(e) => dropHandler(e)}
 		>
