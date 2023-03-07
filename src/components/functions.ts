@@ -1,5 +1,6 @@
 
 const div = (a: string, b: string): string => {
+	if( +b===0) return 'Не определено'
 	return +a / +b + ''
 }
 const multi = (a: string, b: string): string => {

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {deleteSection, setDragElement, setOverElement, reorderItems} from "../../reducer/actions";
-import {dragStore} from "../../dto";
+import {dragStore, IViewStore} from "../../dto";
 import {IViewInitialState} from "../../reducer/viewReducer";
 import {useEffect, useState} from "react";
 
@@ -18,14 +18,14 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 		e.dataTransfer.setData('el', props.value)
 		dispatch(setDragElement(props.value))
 	}
+	const mode = useSelector((state:IViewStore) => state.viewData.mode)
 	const dragEl = useSelector((state: dragStore) => state.dragData.dragElement)
 	const overEl = useSelector((state: dragStore) => state.dragData.overElement)
-// pseudoClass
 	const pseudoClass = `${(props.value === overEl && props.screen !== 'constructor') ? 'pseudoClass' : ''}`
 	//todo add debounce to dragover
 	return <div
 		draggable={`${!props.blocked}`}
-		onDoubleClick={() => props.screen !== 'constructor' && dispatch(deleteSection(props.value))}
+		onDoubleClick={() => mode!=='runtime' && dispatch(deleteSection(props.value))}
 		onDragStart={(e) => dragStart(e)}
 		onDrop={(e) => {
 			if (props.screen === 'constructor') return

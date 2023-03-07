@@ -4,4 +4,4 @@ import {dataReducer} from "./dataReducer";
 
 export const { addSection,deleteSection,reorderItems,changeMode} = viewReducer.actions
 export const {setDragElement,setOverElement}=dragReducer.actions
-export const {addAction,addNumber,equal}=dataReducer.actions
+export const {addAction,addNumber,equal,reset}=dataReducer.actions

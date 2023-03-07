@@ -37,6 +37,11 @@ export const dataReducer = createSlice({
 		},
 		equal(state: IDataInitialState) {
 			state.currentNumber=calculate(state.currentAction, state.firstNumber, state.currentNumber)
+		},
+		reset(state: IDataInitialState){
+			state.currentNumber='0'
+			state.firstNumber=''
+			state.currentAction=''
 		}
 	},
 });
