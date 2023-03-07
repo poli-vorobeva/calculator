@@ -67,3 +67,17 @@
     text-align: center;
     line-height: 56px;
 }
+.empty{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.emptyF{
+    color: var(--primaryColor);
+    font-size: 14px;
+}
+.emptyS{
+font-size: 12px;
+    width: 55%
+}

@@ -7,6 +7,7 @@ import {DataString} from "../UI/DataString";
 import {Actions} from "../UI/Actions";
 import {Numbers} from "../UI/Numbers";
 import {Equal} from "../UI/Equal";
+import {EmptySection} from "../UI/EmptySection";
 
 export const RightSection = () => {
 	const sectionsData = useSelector((state: IViewStore) => state.viewData.constructorData)
@@ -24,7 +25,8 @@ export const RightSection = () => {
 		dispatch(addSection(t))
 	}
 	return (
-		<div className="section right"
+		<div className={`section right ${!sectionsData.length ? "rightFlex":'flexStart'} 
+		${sectionsData.length>=3?"rightWithContent":""}`}
 				 onDragOver={(e) => e.preventDefault()}
 				 onDrop={(e) => dropHandler(e)}
 		>
@@ -34,7 +36,7 @@ export const RightSection = () => {
 				sectionsData.map((sec: string) => <DragWrapper blocked={false} key={sec+'^^'} screen={'view'} value={sec}>
 					{content[sec as keyof typeof content]}
 				</DragWrapper>)
-					:<div>Empty</div>
+					:<EmptySection/>
 			}
 		</div>
 	)

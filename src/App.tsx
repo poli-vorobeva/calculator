@@ -8,16 +8,17 @@ import {ModeRadio} from "./components/UI/modeRadio";
 import {IViewStore} from "./dto";
 
 export const App = () => {
-	const modeData: Array<'constructor' | 'runtime'> = ['constructor', 'runtime']
+	const modeData: Array<'constructor' | 'runtime'> = ['runtime','constructor']
 	const mode = useSelector((state: IViewStore) => state.viewData.mode)
-
-	console.log("MODE", mode)
 	return (
 		<div className={'app'}>
 			<div className={'mode'}>
-				{
-					modeData.map((m, i) => <ModeRadio mode={m}/>)
-				}
+				<div className={'modeWrapper'}>
+					{
+						modeData.map((m, i) => <ModeRadio mode={m}/>)
+					}
+				</div>
+
 			</div>
 			<div className="wrapper">
 				{mode !== 'runtime' && <LeftSection/>}

@@ -8,11 +8,12 @@ export const ModeRadio=(props:{mode:'constructor' | 'runtime'})=>{
 	const dispatch=useDispatch<AppDispatch>()
 
 	return(
-		<div>
+		<div className={`${checked===props.mode?'activeTab':'inActiveTab'}`}>
+			<label htmlFor="huey"><img src={`./public/assets/${props.mode}.png`} alt=""/>{props.mode}</label>
 			<input type="radio" id="mode" name="mode" value={props.mode}
 						 onChange={(e)=>dispatch(changeMode(props.mode))}
 						 checked={checked===props.mode}/>
-			<label htmlFor="huey">{props.mode}</label>
+
 		</div>
 	)
 }

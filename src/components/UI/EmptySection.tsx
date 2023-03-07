@@ -1,9 +1,11 @@
 import * as React from "react";
-
+import './styles.css'
 export const EmptySection=()=>{
 	return(
-		<div>
-
+		<div className={'empty'}>
+			<img src="./public/assets/emptyIcon.png" alt=""/>
+			<p className={'emptyF'}>Перетащите сюда</p>
+			<p className={'emptyS'}>любой элемент из левой панели</p>
 		</div>
 	)
 }
