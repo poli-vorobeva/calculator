@@ -12,6 +12,9 @@ export const viewReducer = createSlice({
 	name: 'viewData',
 	initialState,
 	reducers: {
+		changeMode:(state:IViewInitialState,action:PayloadAction<'constructor' | 'runtime'>)=>{
+			state.mode=action.payload
+		},
 		addSection:(state:IViewInitialState,action:PayloadAction<string>)=>{
 			!state.constructorData.includes(action.payload) && state.constructorData.push(action.payload)
 		},

@@ -7,12 +7,13 @@
     background: indianred;
     display: flex;
     height: 300px;
+    width: 500px;
     align-items: center;
     justify-content: space-evenly;
 }
 .section{
     background: burlywood;
-    flex: 1;
+    width: 240px;
     height: 96%;
     margin: 4%;
 }
