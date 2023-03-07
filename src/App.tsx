@@ -21,7 +21,7 @@ export const App = () => {
 
 			</div>
 			<div className="wrapper">
-				{mode !== 'runtime' && <LeftSection/>}
+				 <LeftSection mode={mode}/>
 				<RightSection/>
 			</div>
 		</div>

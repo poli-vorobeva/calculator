@@ -13,6 +13,27 @@
 .itemWrapper {
     padding: 4px;
     box-shadow: var(--darkShadow);
+    position: relative;
+}
+.pseudoClass{
+    border-top: 1px solid var(--primaryColor);
+    position: relative;
+}
+
+.pseudoClass:after{
+    left: 0;
+}
+.pseudoClass:before{
+    right: 0;
+}
+.pseudoClass:after,.pseudoClass:before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    background: var(--primaryColor);
 }
 
 .singleString {
@@ -80,4 +101,7 @@
 .emptyS{
 font-size: 12px;
     width: 55%
+}
+.opacity{
+    opacity: 0.5;
 }

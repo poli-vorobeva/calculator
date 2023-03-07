@@ -9,8 +9,9 @@ import {useSelector} from "react-redux";
 import {IViewInitialState} from "../../reducer/viewReducer";
 import {useEffect, useId} from "react";
 import {IViewStore} from "../../dto";
+import {runtime} from "webpack";
 
-export const LeftSection = () => {
+export const LeftSection = (props:{mode:string}) => {
 	const addedData=useSelector((state:IViewStore )=>state.viewData.constructorData)
 	const id = useId()
 	const content={
@@ -22,7 +23,8 @@ export const LeftSection = () => {
 
 	return (
 		<div className="section left">
-			{Object.entries(content).map(el=>{
+			{props.mode!=='runtime' &&
+			Object.entries(content).map(el=>{
 				return <DragWrapper key={el[0]} blocked={addedData.includes(el[0])} screen={'constructor'} value={el[0]}>{el[1]}</DragWrapper>
 			})}
 		</div>

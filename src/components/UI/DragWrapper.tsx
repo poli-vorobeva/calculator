@@ -20,8 +20,8 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 	}
 	const dragEl = useSelector((state: dragStore) => state.dragData.dragElement)
 	const overEl = useSelector((state: dragStore) => state.dragData.overElement)
-
-	const stylesEl = {background: `${(props.value === overEl && props.screen !== 'constructor') ? 'red' : ''}`}
+// pseudoClass
+	const pseudoClass = `${(props.value === overEl && props.screen !== 'constructor') ? 'pseudoClass' : ''}`
 	//todo add debounce to dragover
 	return <div
 		draggable={`${!props.blocked}`}
@@ -35,7 +35,7 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 		}}
 		onDragOver={(e) => props.screen !== 'constructor' && dispatch(setOverElement(props.value))}
 		onDragLeave={(e) => props.screen !== 'constructor' && dispatch(setOverElement(''))}
-		style={stylesEl}
+		className={`${pseudoClass} ${props.blocked && 'opacity'}`}
 	>
 		{props.children}
 	</div>
