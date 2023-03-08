@@ -1,11 +1,11 @@
 import * as React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, IViewStore} from "../../dto";
-import {addSection, deleteSection} from '../../reducer/actions'
+import {addSection} from '../../reducer/actions'
 import {DragWrapper} from "../UI/DragWrapper";
 import {DataString} from "../UI/DataString";
-import {Actions} from "../UI/Actions";
-import {Numbers} from "../UI/Numbers";
+import {Actions} from "../UI/actions/Actions";
+import {Numbers} from "../UI/numbers/Numbers";
 import {Equal} from "../UI/Equal";
 import {EmptySection} from "../UI/EmptySection";
 
@@ -40,5 +40,4 @@ export const RightSection = () => {
 			}
 		</div>
 	)
-	//todo fix ids
 }

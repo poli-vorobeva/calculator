@@ -5,6 +5,13 @@ import {IDataInitialState} from "./reducer/dataReducer";
 
 export type AppDispatch = typeof store.dispatch;
 
+export interface IDragWrapperProps {
+	screen: string,
+	value: string,
+	children: JSX.Element,
+	blocked:boolean
+}
+
 export type ICalcStore={
 	dataCalculator:IDataInitialState
 }

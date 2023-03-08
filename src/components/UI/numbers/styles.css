@@ -1,0 +1,18 @@
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 4px;
+}
+
+.numbersItem {
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid var(--borderColor);
+    text-align: center;
+    line-height: 48px;
+}
+
+.zeroStyle {
+    grid-column: 1/3;
+}

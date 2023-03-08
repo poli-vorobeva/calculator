@@ -1,0 +1,11 @@
+.actions {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+}
+
+.actionsItem {
+    width: 22%;
+    border-radius: 4px;
+    border: 1px solid var(--borderColor);
+}

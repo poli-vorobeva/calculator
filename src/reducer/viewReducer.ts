@@ -16,7 +16,8 @@ export const viewReducer = createSlice({
 			state.mode=action.payload
 		},
 		addSection:(state:IViewInitialState,action:PayloadAction<string>)=>{
-			!state.constructorData.includes(action.payload) && state.constructorData.push(action.payload)
+			if(state.constructorData.includes(action.payload)) return
+			action.payload==='dataString'?state.constructorData.unshift(action.payload) :state.constructorData.push(action.payload)
 		},
 		deleteSection:(state:IViewInitialState,action:PayloadAction<string>)=>{
 			state.constructorData=state.constructorData.filter(el=>el!==action.payload)
@@ -24,6 +25,8 @@ export const viewReducer = createSlice({
 		reorderItems:(state:IViewInitialState,action:PayloadAction<{ drag: string, over: string }>)=>{
 			const dragIndex = state.constructorData.indexOf(action.payload.drag)
 			const overIndex = state.constructorData.indexOf(action.payload.over);
+			if(overIndex<=0)return
+			console.log(dragIndex,'----',overIndex)
 			if(dragIndex<0){
 				state.constructorData.splice(overIndex,1,action.payload.drag,action.payload.over)
 			}else{

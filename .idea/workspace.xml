@@ -11,8 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="391d15f7-923e-4066-b451-f2b5a7180649" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/UI/actions/ActionButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/actions/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/numbers/numberButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/numbers/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/actions/Actions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Numbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/numbers/Numbers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/modeRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/modeRadio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/dataReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/dataReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/viewReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/viewReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +50,10 @@
     <property name="ts.external.directory.path" value="C:\Users\poli8\Desktop\calculator\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\poli8\Desktop\calculator\src\components\UI\numbers" />
+      <recent name="C:\Users\poli8\Desktop\calculator\src\components\UI\actions" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\poli8\Desktop\calculator\src\assets" />
     </key>
@@ -71,7 +88,7 @@
       <workItem from="1678120066838" duration="29000" />
       <workItem from="1678120097731" duration="8309000" />
       <workItem from="1678082983031" duration="25238000" />
-      <workItem from="1678247753779" duration="437000" />
+      <workItem from="1678247753779" duration="5829000" />
     </task>
     <servers />
   </component>
@@ -95,22 +112,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="495" y="103" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1678120093197" />
-    <state width="1498" height="147" key="GridCell.Tab.0.bottom" timestamp="1678200972538">
+    <state width="1492" height="91" key="GridCell.Tab.0.bottom" timestamp="1678248228982">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1498" height="147" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1678200972538" />
-    <state width="1498" height="147" key="GridCell.Tab.0.center" timestamp="1678200972538">
+    <state width="1492" height="91" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1678248228982" />
+    <state width="1492" height="91" key="GridCell.Tab.0.center" timestamp="1678248228982">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1498" height="147" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1678200972538" />
-    <state width="1498" height="147" key="GridCell.Tab.0.left" timestamp="1678200972538">
+    <state width="1492" height="91" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1678248228982" />
+    <state width="1492" height="91" key="GridCell.Tab.0.left" timestamp="1678248228982">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1498" height="147" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1678200972538" />
-    <state width="1498" height="147" key="GridCell.Tab.0.right" timestamp="1678200972538">
+    <state width="1492" height="91" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1678248228982" />
+    <state width="1492" height="91" key="GridCell.Tab.0.right" timestamp="1678248228982">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1498" height="147" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1678200972538" />
+    <state width="1492" height="91" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1678248228982" />
     <state x="564" y="66" width="714" height="684" key="find.popup" timestamp="1678185604820">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

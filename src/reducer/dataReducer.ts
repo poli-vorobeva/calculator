@@ -6,7 +6,8 @@ const initialState: IDataInitialState = {
 	currentAction: '',
 	firstNumber: '',
 	secondNumber: '',
-	currentNumber: '0'
+	currentNumber: '0',
+	isEqual:false
 };
 
 export interface IDataInitialState {
@@ -14,7 +15,8 @@ export interface IDataInitialState {
 	currentAction: string,
 	currentNumber: string,
 	firstNumber: string,
-	secondNumber: string
+	secondNumber: string,
+	isEqual:boolean
 }
 
 export const dataReducer = createSlice({
@@ -29,13 +31,18 @@ export const dataReducer = createSlice({
 				state.firstNumber = state.currentNumber
 				state.currentAction = action.payload
 				state.currentNumber = ''
-			} else {
+			} else if(state.isEqual){
+				state.firstNumber=state.currentNumber
+				state.currentAction = action.payload
+				state.currentNumber = ''
+			}else {
 				state.firstNumber = calculate(state.currentAction, state.firstNumber, state.currentNumber)
 				state.currentAction = action.payload
 				state.currentNumber = ''
 			}
 		},
 		equal(state: IDataInitialState) {
+			state.isEqual=true
 			state.currentNumber=calculate(state.currentAction, state.firstNumber, state.currentNumber)
 		},
 		reset(state: IDataInitialState){
