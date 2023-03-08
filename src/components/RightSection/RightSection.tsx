@@ -26,7 +26,7 @@ export const RightSection = () => {
 	}
 	return (
 		<div className={`section right ${!sectionsData.length ? "rightFlex" : 'flexStart'} 
-		${sectionsData.length >= 3 ? "rightWithContent" : ""}`}
+		${sectionsData.length >= 1 ? "rightWithContent" : ""}`}
 				 onDragOver={(e) => e.preventDefault()}
 				 onDrop={(e) => dropHandler(e)}
 		>

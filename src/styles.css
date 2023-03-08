@@ -50,8 +50,12 @@
 
 .rightWithContent{
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    justify-content: start;
+    height: 445px;
+}
+.rightWithContent div{
+    margin-bottom: 10px;
 }
 .left{
     position: relative;

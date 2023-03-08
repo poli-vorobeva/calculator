@@ -28,7 +28,7 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 		}}
 		onDragOver={(e) => props.screen !== 'constructor' && props.value!=='dataString'  && dispatch(setOverElement(props.value))}
 		onDragLeave={(e) => props.screen !== 'constructor' && dispatch(setOverElement(''))}
-		className={`${pseudoClass} ${props.blocked && 'opacity'}`}
+		className={`${pseudoClass} ${props.blocked ? 'opacity':''}`}
 	>
 		{props.children}
 	</div>
