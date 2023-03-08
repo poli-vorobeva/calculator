@@ -15,9 +15,7 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 	const overEl = useSelector((state: dragStore) => state.dragData.overElement)
 	const pseudoClass = `${(props.value === overEl && props.screen !== 'constructor') ? 'pseudoClass' : ''}`
 	//todo add debounce to dragover
-console.log(mode)
 	const draggable = !(mode=='runtime' || props.blocked)
-	console.log(draggable)
 	return <div
 		draggable={draggable}
 		onDoubleClick={() => mode!=='runtime' && dispatch(deleteSection(props.value))}

@@ -1,14 +1,9 @@
 import * as React from "react";
 import './styles.css'
 import {ActionButton} from "./ActionButton";
+import {actions} from "../../consts";
 
 export const Actions=()=>{
-	const actions={
-		div:'/',
-		multi:'*',
-		sub:'-',
-		add:'+'
-	}
 	return (
 		<div className={'itemWrapper singleString' }>
 			<div className={'actions'}>

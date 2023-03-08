@@ -11,21 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="391d15f7-923e-4066-b451-f2b5a7180649" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/actions/ActionButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/actions/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/numbers/numberButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/numbers/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/consts.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSection/LeftSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSection/RightSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/actions/Actions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Numbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/numbers/Numbers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/modeRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/modeRadio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer/dataReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/dataReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer/viewReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/viewReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/actions/Actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/actions/Actions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/numbers/Numbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/numbers/Numbers.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +78,7 @@
       <workItem from="1678120066838" duration="29000" />
       <workItem from="1678120097731" duration="8309000" />
       <workItem from="1678082983031" duration="25238000" />
-      <workItem from="1678247753779" duration="5829000" />
+      <workItem from="1678247753779" duration="8312000" />
     </task>
     <servers />
   </component>
