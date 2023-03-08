@@ -2,8 +2,6 @@ import * as React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {deleteSection, setDragElement, setOverElement, reorderItems} from "../../reducer/actions";
 import {dragStore, IViewStore} from "../../dto";
-import {IViewInitialState} from "../../reducer/viewReducer";
-import {useEffect, useState} from "react";
 
 interface IDragWrapperProps {
 	screen: string,
@@ -23,6 +21,7 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 	const overEl = useSelector((state: dragStore) => state.dragData.overElement)
 	const pseudoClass = `${(props.value === overEl && props.screen !== 'constructor') ? 'pseudoClass' : ''}`
 	//todo add debounce to dragover
+	console.log(props.value)
 	return <div
 		draggable={`${!props.blocked}`}
 		onDoubleClick={() => mode!=='runtime' && dispatch(deleteSection(props.value))}
@@ -33,7 +32,7 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 			dispatch(setDragElement(''))
 			dispatch(setOverElement(''))
 		}}
-		onDragOver={(e) => props.screen !== 'constructor' && dispatch(setOverElement(props.value))}
+		onDragOver={(e) => props.screen !== 'constructor' && props.value!=='dataString'  && dispatch(setOverElement(props.value))}
 		onDragLeave={(e) => props.screen !== 'constructor' && dispatch(setOverElement(''))}
 		className={`${pseudoClass} ${props.blocked && 'opacity'}`}
 	>
