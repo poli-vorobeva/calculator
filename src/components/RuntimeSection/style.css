@@ -1,0 +1,6 @@
+.rightWithContent{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    height: 445px;
+}

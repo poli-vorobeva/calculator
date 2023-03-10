@@ -6,6 +6,8 @@ import {dragStore, IDragWrapperProps, IViewStore} from "../../dto";
 
 export const DragWrapper = (props: IDragWrapperProps) => {
 	const dispatch = useDispatch()
+	const sectionsData = useSelector((state: IViewStore) => state.viewData.constructorData)
+	const marginBottom=sectionsData.length >= 1 && "10px"
 	const dragStart = (e: React.DragEvent<HTMLDivElement>) => {
 		e.dataTransfer.setData('el', props.value)
 		dispatch(setDragElement(props.value))
@@ -29,6 +31,7 @@ export const DragWrapper = (props: IDragWrapperProps) => {
 		onDragOver={(e) => props.screen !== 'constructor' && props.value!=='dataString'  && dispatch(setOverElement(props.value))}
 		onDragLeave={(e) => props.screen !== 'constructor' && dispatch(setOverElement(''))}
 		className={`${pseudoClass} ${props.blocked ? 'opacity':''}`}
+		style={{marginBottom}}
 	>
 		{props.children}
 	</div>

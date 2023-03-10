@@ -1,8 +1,8 @@
 import * as React from "react";
 import {Provider, useSelector} from "react-redux";
 import store from "./store";
-import {LeftSection} from "./components/LeftSection/LeftSection";
-import {RightSection} from "./components/RightSection/RightSection";
+import {ConstructorSection} from "./components/ConstructorSection/ConstructorSection";
+import {RuntimeSection} from "./components/RuntimeSection/RuntimeSection";
 import './styles.css'
 import {ModeRadio} from "./components/UI/modeRadio";
 import {IViewStore} from "./dto";
@@ -21,8 +21,8 @@ export const App = () => {
 
 			</div>
 			<div className="wrapper">
-				 <LeftSection mode={mode}/>
-				<RightSection/>
+				 <ConstructorSection mode={mode}/>
+				<RuntimeSection/>
 			</div>
 		</div>
 	)

@@ -8,7 +8,7 @@ import {DragWrapper} from "../UI/DragWrapper";
 import {useSelector} from "react-redux";
 import {IViewStore} from "../../dto";
 
-export const LeftSection = (props: { mode: string }) => {
+export const ConstructorSection = (props: { mode: string }) => {
 	const addedData = useSelector((state: IViewStore) => state.viewData.constructorData)
 	const content = {
 		dataString: <DataString/>,
