@@ -12,6 +12,7 @@ export const ModeRadio = (props: { mode: 'constructor' | 'runtime' }) => {
 			<label htmlFor="huey"><img src={`./public/assets/${props.mode}.png`} alt=""/>{props.mode}</label>
 			<input type="radio" id="mode" name="mode" value={props.mode}
 						 onChange={(e) => {
+						 	console.log("INPUTchange",props.mode)
 							 dispatch(changeMode(props.mode))
 							 dispatch(reset())
 						 }}
