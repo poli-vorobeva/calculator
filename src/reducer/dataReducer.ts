@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {calculate} from "../components/functions";
+import {calculate} from "../components/common/functions";
 
 const initialState: IDataInitialState = {
 	result: '0',

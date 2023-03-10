@@ -1,31 +1,15 @@
 import * as React from "react";
-import {Provider, useDispatch, useSelector} from "react-redux";
-import store from "./store";
-import {ConstructorSection} from "./components/ConstructorSection/ConstructorSection";
-import {RuntimeSection} from "./components/RuntimeSection/RuntimeSection";
-import './styles.css'
-import {ModeRadio} from "./components/UI/modeRadio";
-import {IViewStore} from "./dto";
-import {KeyPressComponent} from "./components/KeyPressComponent";
+import "./styles.css"
+import {KeyPressComponent} from "./components/hoc/KeyPressComponent";
+import {ModeComponent} from "./components/ModeComponent";
+import {ContentComponent} from "./components/content/ContentComponent";
 
-export const App = () => {
-	const modeData: Array<'constructor' | 'runtime'> = ['runtime', 'constructor']
-	const mode = useSelector((state: IViewStore) => state.viewData.mode)
+export const App = (): JSX.Element => {
 	return (
 		<KeyPressComponent>
-			<div className={'app'}>
-				<div className={'mode'}>
-					<div className={'modeWrapper'}>
-						{
-							modeData.map((m, i) => <ModeRadio mode={m}/>)
-						}
-					</div>
-
-				</div>
-				<div className="wrapper">
-					<ConstructorSection mode={mode}/>
-					<RuntimeSection/>
-				</div>
+			<div className="app">
+				<ModeComponent/>
+				<ContentComponent/>
 			</div>
 		</KeyPressComponent>
 	)

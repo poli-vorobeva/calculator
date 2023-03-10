@@ -1,9 +1,9 @@
 import * as React from "react";
-import './styles.css'
+import '../UI/styles.css'
 import {useSelector} from "react-redux";
-import {ICalcStore} from "../../dto";
+import {ICalcStore} from "../common/dto";
 
-export const DataString:React.FC=()=>{
+export const Display:React.FC=()=>{
 	const c =useSelector((state:ICalcStore) =>  state.dataCalculator.currentNumber)
 	return (
 		<div className={'itemWrapper singleString dataStringEmpty'}>

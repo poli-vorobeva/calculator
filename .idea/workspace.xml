@@ -11,8 +11,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="391d15f7-923e-4066-b451-f2b5a7180649" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/KeyPressComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/ConstructorSection/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/ContentComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/RuntimeSection/RuntimeSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hoc/drag/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ConstructorSection/ConstructorSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/ConstructorSection/ConstructorSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ConstructorSection/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModeComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KeyPressComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc/KeyPressComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RuntimeSection/RuntimeSection.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RuntimeSection/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/RuntimeSection/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/DataString.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Display.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/DragWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc/drag/DragWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/EmptySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/EmptySection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Equal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Equal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/actions/ActionButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/actions/ActionButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/actions/Actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/actions/Actions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/actions/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/actions/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/modeRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/modeRadio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/numbers/Numbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/numbers/Numbers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/numbers/numberButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/numbers/numberButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/numbers/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/numbers/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/consts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/consts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/dataReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/dataReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/viewReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/viewReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\poli8\Desktop\calculator\src\components\UI\numbers" />
-      <recent name="C:\Users\poli8\Desktop\calculator\src\components\UI\actions" />
+      <recent name="C:\Users\poli8\Desktop\calculator\src\components\common" />
+      <recent name="C:\Users\poli8\Desktop\calculator\src\components\hoc" />
+      <recent name="C:\Users\poli8\Desktop\calculator\src\components\sections" />
+      <recent name="C:\Users\poli8\Desktop\calculator\src\components\content" />
+      <recent name="C:\Users\poli8\Desktop\calculator\src\components" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\poli8\Desktop\calculator\src\assets" />
@@ -75,7 +104,7 @@
       <workItem from="1678120066838" duration="29000" />
       <workItem from="1678120097731" duration="8309000" />
       <workItem from="1678082983031" duration="25238000" />
-      <workItem from="1678247753779" duration="16176000" />
+      <workItem from="1678247753779" duration="19642000" />
     </task>
     <servers />
   </component>
@@ -99,25 +128,25 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="495" y="103" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1678120093197" />
-    <state width="1391" height="164" key="GridCell.Tab.0.bottom" timestamp="1678432030439">
+    <state width="1391" height="164" key="GridCell.Tab.0.bottom" timestamp="1678438062669">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1391" height="164" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1678432030439" />
-    <state width="1391" height="164" key="GridCell.Tab.0.center" timestamp="1678432030439">
+    <state width="1391" height="164" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1678438062669" />
+    <state width="1391" height="164" key="GridCell.Tab.0.center" timestamp="1678438062669">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1391" height="164" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1678432030439" />
-    <state width="1391" height="164" key="GridCell.Tab.0.left" timestamp="1678432030439">
+    <state width="1391" height="164" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1678438062669" />
+    <state width="1391" height="164" key="GridCell.Tab.0.left" timestamp="1678438062669">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1391" height="164" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1678432030439" />
-    <state width="1391" height="164" key="GridCell.Tab.0.right" timestamp="1678432030439">
+    <state width="1391" height="164" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1678438062669" />
+    <state width="1391" height="164" key="GridCell.Tab.0.right" timestamp="1678438062669">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1391" height="164" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1678432030439" />
-    <state x="163" y="66" width="1115" height="684" key="find.popup" timestamp="1678433441558">
+    <state width="1391" height="164" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1678438062669" />
+    <state x="163" y="66" width="1325" height="684" key="find.popup" timestamp="1678437268696">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="163" y="66" width="1115" height="684" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1678433441558" />
+    <state x="163" y="66" width="1325" height="684" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1678437268696" />
   </component>
 </project>

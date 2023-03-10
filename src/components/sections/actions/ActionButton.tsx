@@ -1,9 +1,10 @@
 import {addAction} from "../../../reducer/actions";
 import * as React from "react";
 import {useDispatch} from "react-redux";
-import {AppDispatch} from "../../../dto";
+import {AppDispatch} from "../../common/dto";
 
-export const ActionButton = (props: { action: string, icon: string }) => {
+type tPropsActionButton = { action: string, icon: string }
+export const ActionButton = (props: tPropsActionButton): JSX.Element => {
 	const dispatch = useDispatch<AppDispatch>()
 	return (
 		<button

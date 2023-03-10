@@ -1,9 +1,9 @@
 import * as React from "react";
 import './styles.css'
 import {ActionButton} from "./ActionButton";
-import {actions} from "../../consts";
+import {actions} from "../../common/consts";
 
-export const Actions = () => {
+export const Actions = ():JSX.Element => {
 	return (
 		<div className={'itemWrapper singleString'}>
 			<div className={'actions'}>

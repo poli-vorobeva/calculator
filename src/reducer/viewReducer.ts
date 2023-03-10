@@ -25,7 +25,8 @@ export const viewReducer = createSlice({
 		reorderItems:(state:IViewInitialState,action:PayloadAction<{ drag: string, over: string }>)=>{
 			const dragIndex = state.constructorData.indexOf(action.payload.drag)
 			const overIndex = state.constructorData.indexOf(action.payload.over);
-			if(overIndex<=0)return
+
+			if(overIndex<=0|| dragIndex===0)return
 			console.log(dragIndex,'----',overIndex)
 			if(dragIndex<0){
 				state.constructorData.splice(overIndex,1,action.payload.drag,action.payload.over)

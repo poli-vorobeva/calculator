@@ -1,11 +1,11 @@
 import {useEffect, useRef, useState} from "react";
-import {addAction, addNumber, equal} from "../reducer/actions";
-import {actions} from "./consts";
+import {addAction, addNumber, equal} from "../../reducer/actions";
+import {actions} from "../common/consts";
 import {useDispatch, useSelector} from "react-redux";
-import {IViewStore} from "../dto";
+import {IViewStore} from "../common/dto";
 import * as React from "react";
 
-export const KeyPressComponent = (props: { children: JSX.Element }) => {
+export const KeyPressComponent = (props: { children: JSX.Element }):JSX.Element => {
 	const mode = useSelector((state: IViewStore) => state.viewData.mode)
 	const modeR = useRef('constructor')
 	const dispatch = useDispatch()

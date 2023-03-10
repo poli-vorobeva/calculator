@@ -1,7 +1,7 @@
 import {addNumber} from "../../../reducer/actions";
 import * as React from "react";
 import {useDispatch} from "react-redux";
-import {AppDispatch} from "../../../dto";
+import {AppDispatch} from "../../common/dto";
 import './styles.css'
 
 export const NumberButton = (props: { isDisplay: boolean, mode: string, number: string }) => {

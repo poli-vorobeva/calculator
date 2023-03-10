@@ -1,10 +1,10 @@
-import store from "./store";
-import {IDragInitialState} from "./reducer/dragReducer";
-import {IViewInitialState} from "./reducer/viewReducer";
-import {IDataInitialState} from "./reducer/dataReducer";
+import store from "../../store";
+import {IDragInitialState} from "../../reducer/dragReducer";
+import {IViewInitialState} from "../../reducer/viewReducer";
+import {IDataInitialState} from "../../reducer/dataReducer";
 
 export type AppDispatch = typeof store.dispatch;
-
+export type modeType = 'constructor' | 'runtime'
 export interface IDragWrapperProps {
 	screen: string,
 	value: string,
